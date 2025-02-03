@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #FF3002;
+    --color-secondary: #002E5D;
+    --color-ochre-light: #FFF5E9;
+  }
+  
+  body {
+    @apply antialiased text-gray-900;
+  }
+  
+  input, textarea {
+    @apply p-3 border rounded-lg;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .btn-primary {
+    @apply bg-[#FF3002] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#E62B02] transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-[#FF3002] text-[#FF3002] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#FFF5E9] transition-colors;
+  }
+}
